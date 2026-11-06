@@ -1,0 +1,83 @@
+{
+  "source": "Documentos GIT / PowerBI Santander",
+  "files": [
+    {
+      "original_name": "BD CURSOS.pbix",
+      "path": "reports/courses/courses.pbix",
+      "size": 73979,
+      "git_blob_sha": "babc8f9de6675d7d70658711028ee4e1bf45b07c"
+    },
+    {
+      "original_name": "BD FACTURAS.pbix",
+      "path": "reports/invoices/invoices.pbix",
+      "size": 71010,
+      "git_blob_sha": "bcc9d7c1cfde0fb4266bb137b0fb277c8cea4842"
+    },
+    {
+      "original_name": "BD PERSONAS.pbix",
+      "path": "import-exercises/people/people.pbix",
+      "size": 60994,
+      "git_blob_sha": "00839a73fb85d6c9764a5c6cbded57138e9a5d87"
+    },
+    {
+      "original_name": "BD CURSOS TXT.pbix",
+      "path": "import-exercises/courses-text/courses-text.pbix",
+      "size": 38990,
+      "git_blob_sha": "318958b062f1a48b70b4dc1dcdbd4b003f87c108"
+    },
+    {
+      "original_name": "BD FACTURAS TXT.pbix",
+      "path": "import-exercises/invoices-text/invoices-text.pbix",
+      "size": 43645,
+      "git_blob_sha": "38ab05cecd40d76d2305806baa72a15969e5b3b6"
+    },
+    {
+      "original_name": "01 - BD CURSOS.xlsx",
+      "path": "datasets/courses/01-courses.xlsx",
+      "size": 39030,
+      "git_blob_sha": "3cbe4ed5aea175c395d78f7f565a9a8c64260cb0"
+    },
+    {
+      "original_name": "02 - BD CURSOS.xlsx",
+      "path": "datasets/courses/02-courses.xlsx",
+      "size": 38934,
+      "git_blob_sha": "e186e6e1b4327a67b4dbba598d565c50013598b4"
+    },
+    {
+      "original_name": "03- BD CURSOS.xlsx",
+      "path": "datasets/courses/03-courses.xlsx",
+      "size": 40906,
+      "git_blob_sha": "b7985db72af8557efd95a2ccc51bb521aadb43d8"
+    },
+    {
+      "original_name": "04 - BD CURSOS.xlsx",
+      "path": "datasets/courses/04-courses.xlsx",
+      "size": 40733,
+      "git_blob_sha": "be374966a353fecc396647c2d67d1df2fd05ecc1"
+    },
+    {
+      "original_name": "05 - BD CURSOS.txt",
+      "path": "datasets/courses/05-courses.txt",
+      "size": 46888,
+      "git_blob_sha": "5de91cf6348f0cf54b0c1a40429b0af1c26c58f2"
+    },
+    {
+      "original_name": "06 - BD FACTURAS.xlsx",
+      "path": "datasets/invoices/06-invoices.xlsx",
+      "size": 58822,
+      "git_blob_sha": "8a7ce3d7cdedb8f339676f58ecd8a0782ecf3689"
+    },
+    {
+      "original_name": "07 - BD FACTURAS.txt",
+      "path": "datasets/invoices/07-invoices.txt",
+      "size": 82466,
+      "git_blob_sha": "6e82f7a090517144e2e3a46989c4f7925ee810a9"
+    },
+    {
+      "original_name": "08 - BD PERSONAS.xlsx",
+      "path": "datasets/people/08-people.xlsx",
+      "size": 17272,
+      "git_blob_sha": "a77f0abbc9333f300abf6b25cec7b814ac138cf9"
+    }
+  ]
+}

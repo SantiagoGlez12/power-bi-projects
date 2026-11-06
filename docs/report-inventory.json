@@ -1,0 +1,213 @@
+[
+  {
+    "file": "reports/courses/courses.pbix",
+    "pages": [
+      {
+        "page": "Page 1",
+        "visuals": [
+          {
+            "type": "tableEx",
+            "projections": {
+              "Values": [
+                {
+                  "queryRef": "T_CURSOS.CURSO"
+                },
+                {
+                  "queryRef": "CountNonNull(T_CURSOS.CURSO)"
+                }
+              ]
+            }
+          },
+          {
+            "type": "clusteredBarChart",
+            "projections": {
+              "Category": [
+                {
+                  "queryRef": "T_CURSOS.CLIENTE",
+                  "active": true
+                }
+              ],
+              "Y": [
+                {
+                  "queryRef": "Sum(T_CURSOS.IMPORTE CLIENTE)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "page": "Page 2",
+        "visuals": [
+          {
+            "type": "tableEx",
+            "projections": {
+              "Values": [
+                {
+                  "queryRef": "T_CURSOS.CURSO"
+                },
+                {
+                  "queryRef": "Sum(T_CURSOS.DURACION)"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "reports/invoices/invoices.pbix",
+    "pages": [
+      {
+        "page": "Page 1",
+        "visuals": [
+          {
+            "type": "tableEx",
+            "projections": {
+              "Values": [
+                {
+                  "queryRef": "T_FACTURAS.CLIENTE"
+                },
+                {
+                  "queryRef": "CountNonNull(T_FACTURAS.NUMERO FACTURA CLIENTE)"
+                },
+                {
+                  "queryRef": "Sum(T_FACTURAS.IMPORTE CLIENTE)"
+                },
+                {
+                  "queryRef": "Divide(Sum(T_FACTURAS.IMPORTE CLIENTE), ScopedEval(Sum(T_FACTURAS.IMPORTE CLIENTE), []))"
+                }
+              ]
+            }
+          },
+          {
+            "type": "tableEx",
+            "projections": {
+              "Values": [
+                {
+                  "queryRef": "T_FACTURAS.PROVINCIA"
+                },
+                {
+                  "queryRef": "T_FACTURAS.CLIENTE"
+                }
+              ]
+            }
+          },
+          {
+            "type": "pivotTable",
+            "projections": {
+              "Rows": [
+                {
+                  "queryRef": "T_FACTURAS.CONCEPTO",
+                  "active": true
+                }
+              ],
+              "Columns": [
+                {
+                  "queryRef": "T_FACTURAS.TIPO",
+                  "active": true
+                }
+              ],
+              "Values": [
+                {
+                  "queryRef": "CountNonNull(T_FACTURAS.NUMERO FACTURA CLIENTE)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "page": "Graficos",
+        "visuals": [
+          {
+            "type": "hundredPercentStackedBarChart",
+            "projections": {
+              "Category": [
+                {
+                  "queryRef": "T_FACTURAS.CONCEPTO",
+                  "active": true
+                }
+              ],
+              "Y": [
+                {
+                  "queryRef": "CountNonNull(T_FACTURAS.NUMERO FACTURA CLIENTE)"
+                }
+              ],
+              "Series": [
+                {
+                  "queryRef": "T_FACTURAS.SECTOR"
+                }
+              ]
+            }
+          },
+          {
+            "type": "donutChart",
+            "projections": {
+              "Category": [
+                {
+                  "queryRef": "T_FACTURAS.SECTOR",
+                  "active": true
+                }
+              ],
+              "Y": [
+                {
+                  "queryRef": "CountNonNull(T_FACTURAS.NUMERO FACTURA CLIENTE)"
+                }
+              ]
+            }
+          },
+          {
+            "type": "cardVisual",
+            "projections": {
+              "Data": [
+                {
+                  "queryRef": "CountNonNull(T_FACTURAS.NUMERO FACTURA CLIENTE)"
+                }
+              ]
+            }
+          },
+          {
+            "type": "slicer",
+            "projections": {
+              "Values": [
+                {
+                  "queryRef": "T_FACTURAS.PROVINCIA",
+                  "active": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "import-exercises/people/people.pbix",
+    "pages": [
+      {
+        "page": "Page 1",
+        "visuals": []
+      }
+    ]
+  },
+  {
+    "file": "import-exercises/courses-text/courses-text.pbix",
+    "pages": [
+      {
+        "page": "Page 1",
+        "visuals": []
+      }
+    ]
+  },
+  {
+    "file": "import-exercises/invoices-text/invoices-text.pbix",
+    "pages": [
+      {
+        "page": "Page 1",
+        "visuals": []
+      }
+    ]
+  }
+]
