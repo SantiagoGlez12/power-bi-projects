@@ -1,5 +1,3 @@
-> **Publication pending:** the report files and datasets described below remain in Drive and are not currently included in this repository.
-
 # Course Reports
 
 `courses.pbix` has two saved report pages:

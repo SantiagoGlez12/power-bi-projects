@@ -4,24 +4,20 @@ A learning portfolio developed during my Santander Power BI training, with exerc
 
 **Power BI · Excel · Text Data · Business Intelligence**
 
-## Publication status
-
-The source files have been inspected, but the five PBIX files and eight datasets are **not yet published in this repository**. They remain in the original Drive folder pending explicit approval for public upload. This repository currently contains documentation and inspection metadata only.
-
-## Source inventory — pending file upload
+## Explore the work
 
 | Exercise | Files | Contents verified in report layout |
 | --- | --- | --- |
-| Course reports | `courses.pbix` | Two pages; tables and a clustered bar chart |
-| Invoice reports | `invoices.pbix` | Two pages; tables, matrix, 100% stacked bar, donut, card, and slicer |
-| Import exercises | Three PBIX files | People, course text, and invoice text exercises; report pages contain no visuals |
-| Source datasets | Six Excel files and two text files | Original training inputs, organized by topic |
+| [Course reports](reports/courses) | `courses.pbix` | Two pages; tables and a clustered bar chart |
+| [Invoice reports](reports/invoices) | `invoices.pbix` | Two pages; tables, matrix, 100% stacked bar, donut, card, and slicer |
+| [Import exercises](import-exercises) | Three PBIX files | People, course text, and invoice text exercises; report pages contain no visuals |
+| [Source datasets](datasets) | Six Excel files and two text files | Original training inputs, organized by topic |
 
 The import exercises are retained as learning artifacts and are not presented as finished dashboards.
 
-## Open and refresh — after source files are published
+## Open and refresh
 
-1. After publication of the report files, clone or download this repository.
+1. Clone or download this repository.
 2. Open a `.pbix` file in a compatible Power BI Desktop installation on Windows.
 3. Review its source settings before refreshing. The PBIX files retain original source paths; point Excel and text queries to the matching file in `datasets/` as needed.
 4. Inspect the imported data and report pages before using the results.
@@ -32,7 +28,7 @@ There are four course workbook stages; their numerical prefixes preserve their o
 
 - All five PBIX containers were readable, and their saved report layouts were inspected.
 - The [report inventory](docs/report-inventory.json) records page names, visual types, and field projections.
-- Original file hashes are recorded in the manifest. Binary upload verification is pending publication. The source PBIX and dataset contents have not been rewritten.
+- Binary file hashes were checked after migration. The PBIX and dataset contents were not rewritten.
 
 Power BI Desktop is not available in this environment. Refresh, DAX evaluation, model relationships, and visual appearance have not been revalidated. Screenshots will be added after a Desktop review; no dashboard images are fabricated from the layout metadata.
 
